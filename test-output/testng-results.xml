@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="20901" started-at="2017-04-21T08:30:54Z" finished-at="2017-04-21T08:31:15Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="20901" started-at="2017-04-21T08:30:54Z" finished-at="2017-04-21T08:31:15Z">
+      <class name="com.TestCompany.TestEmployee.TestEmployeeApi">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="172" started-at="2017-04-21T14:00:54Z" finished-at="2017-04-21T14:00:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="20370" started-at="2017-04-21T14:00:54Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2017-04-21T14:01:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2017-04-21T14:01:14Z" finished-at="2017-04-21T14:01:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.TestCompany.TestEmployee.TestEmployeeApi.addEmployeeDepartment()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="addEmployeeDepartment()[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="addEmployeeDepartment" duration-ms="125" started-at="2017-04-21T14:01:14Z" finished-at="2017-04-21T14:01:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeDepartment -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2017-04-21T14:01:15Z" finished-at="2017-04-21T14:01:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.TestCompany.TestEmployee.TestEmployeeApi.addEmployeeRole()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2017-04-21T14:01:15Z" finished-at="2017-04-21T14:01:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.TestCompany.TestEmployee.TestEmployeeApi.addEmployeeRole()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="addEmployeeRole()[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="addEmployeeRole" duration-ms="0" started-at="2017-04-21T14:01:15Z" finished-at="2017-04-21T14:01:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeRole -->
+        <test-method status="PASS" signature="deleteEmployee()[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="deleteEmployee" duration-ms="0" started-at="2017-04-21T14:01:15Z" finished-at="2017-04-21T14:01:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteEmployee -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2017-04-21T14:01:15Z" finished-at="2017-04-21T14:01:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.TestCompany.TestEmployee.TestEmployeeApi.deleteEmployee()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2017-04-21T14:01:15Z" finished-at="2017-04-21T14:01:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.TestCompany.TestEmployee.TestEmployeeApi.addEmployeeDepartment()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="16" started-at="2017-04-21T14:01:15Z" finished-at="2017-04-21T14:01:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.TestCompany.TestEmployee.TestEmployeeApi.deleteEmployee()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="removeEmployeeDepartment()[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="removeEmployeeDepartment" duration-ms="16" started-at="2017-04-21T14:01:15Z" finished-at="2017-04-21T14:01:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeEmployeeDepartment -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2017-04-21T14:01:15Z" finished-at="2017-04-21T14:01:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.TestCompany.TestEmployee.TestEmployeeApi.removeEmployeeDepartment()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="removeEmployeeRole()[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="removeEmployeeRole" duration-ms="15" started-at="2017-04-21T14:01:15Z" finished-at="2017-04-21T14:01:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeEmployeeRole -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2017-04-21T14:01:15Z" finished-at="2017-04-21T14:01:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.TestCompany.TestEmployee.TestEmployeeApi.removeEmployeeRole()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2017-04-21T14:01:15Z" finished-at="2017-04-21T14:01:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.TestCompany.TestEmployee.TestEmployeeApi.removeEmployeeDepartment()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2017-04-21T14:01:15Z" finished-at="2017-04-21T14:01:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.TestCompany.TestEmployee.TestEmployeeApi.updateEmployeeDepartment()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2017-04-21T14:01:15Z" finished-at="2017-04-21T14:01:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.TestCompany.TestEmployee.TestEmployeeApi.removeEmployeeRole()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2017-04-21T14:01:15Z" finished-at="2017-04-21T14:01:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.TestCompany.TestEmployee.TestEmployeeApi.updateEmployeeRole()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="updateEmployeeRole()[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="updateEmployeeRole" duration-ms="0" started-at="2017-04-21T14:01:15Z" finished-at="2017-04-21T14:01:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateEmployeeRole -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2017-04-21T14:01:15Z" finished-at="2017-04-21T14:01:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.TestCompany.TestEmployee.TestEmployeeApi.updateEmployeeDepartment()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="updateEmployeeDepartment()[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="updateEmployeeDepartment" duration-ms="0" started-at="2017-04-21T14:01:15Z" finished-at="2017-04-21T14:01:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateEmployeeDepartment -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2017-04-21T14:01:15Z" finished-at="2017-04-21T14:01:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.TestCompany.TestEmployee.TestEmployeeApi.updateEmployeeRole()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.TestCompany.TestEmployee.TestEmployeeApi@f8c1ddd]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2017-04-21T14:01:15Z" finished-at="2017-04-21T14:01:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.TestCompany.TestEmployee.TestEmployeeApi -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
