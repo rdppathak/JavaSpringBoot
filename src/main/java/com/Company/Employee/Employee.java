@@ -1,21 +1,47 @@
-package Employee;
+package com.Company.Employee;
 
 import java.util.HashSet;
 import java.util.Set;
 
-import Department.Department;
-import Role.Role;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
+import com.Company.Department.Department;
+import com.Company.Role.Role;
+
+@Entity
+@Table(name="Employees", uniqueConstraints={@UniqueConstraint(columnNames = {"firstName", "lastName"})})
 public class Employee {
 	
+	@Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
+	@Column
 	private String firstName;
+	@Column
 	private String lastName;
+	@Column
 	private String email;
+	@Column
 	private int age;
+	@Column
 	private double salary;
 	
+	@ManyToMany
+	@JoinTable(name = "EMP_ROLE", joinColumns = @JoinColumn(name = "EMPLOYEES_ID", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "ROLES_ID", referencedColumnName = "ID"))
 	private Set<Role> role;
+	
+	@ManyToMany
+	@JoinTable(name = "EMP_DEPARTMENT", joinColumns = @JoinColumn(name = "EMPLOYEES_ID", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name="DEPARTMENT_ID",  referencedColumnName = "ID"))
 	private Set<Department> department;
 
 	public Employee(){
@@ -81,6 +107,15 @@ public class Employee {
 		this.role.add(role);
 	}
 
+	public void removeRole(String title){
+		for(Role r: role){
+			if (r.getTitle() == title){
+				role.remove(r);
+				return;
+			}
+		}
+	}
+	
 	public Department getDepartment(String departmentName) {
 		for(Department d: department){
 			if (d.getName() == departmentName){
@@ -92,6 +127,15 @@ public class Employee {
 
 	public void setDepartment(Department department) {
 		this.department.add(department);
+	}
+	
+	public void removeDepartment(String departmentName){
+		for(Department d: department){
+			if(d.getName() == departmentName){
+				department.remove(d);
+				return;
+			}
+		}
 	}
 	
 }

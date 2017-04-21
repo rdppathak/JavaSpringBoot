@@ -1,4 +1,4 @@
-package Role;
+package com.Company.Role;
 
 public class RoleController {
 
