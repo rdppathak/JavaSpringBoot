@@ -3,8 +3,12 @@ package com.Company.Employee;
 import java.util.HashSet;
 import java.util.Set;
 
+import javax.persistence.AttributeOverride;
+import javax.persistence.AttributeOverrides;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -16,15 +20,17 @@ import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
 import com.Company.Department.Department;
+import com.Company.MindEntity.MindEntity;
 import com.Company.Role.Role;
 
 @Entity
 @Table(name="Employees", uniqueConstraints={@UniqueConstraint(columnNames = {"firstName", "lastName"})})
-public class Employee {
+@AttributeOverride(name = "id", column =@Column(name = "EMPLOYEE_ID"))
+public class Employee extends MindEntity{
 	
-	@Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
-	private long id;
+//	@Id
+//    @GeneratedValue(strategy=GenerationType.AUTO)
+//	private long id;
 	@Column
 	private String firstName;
 	@Column
@@ -36,12 +42,12 @@ public class Employee {
 	@Column
 	private double salary;
 	
-	@ManyToMany
-	@JoinTable(name = "EMP_ROLE", joinColumns = @JoinColumn(name = "EMPLOYEES_ID", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "ROLES_ID", referencedColumnName = "ID"))
+	@ManyToMany(targetEntity=Role.class, cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@JoinTable(name = "EMP_ROLE", joinColumns = @JoinColumn(name = "EMPLOYEE_ID"), inverseJoinColumns = @JoinColumn(name = "ROLE_ID"))
 	private Set<Role> role;
 	
-	@ManyToMany
-	@JoinTable(name = "EMP_DEPARTMENT", joinColumns = @JoinColumn(name = "EMPLOYEES_ID", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name="DEPARTMENT_ID",  referencedColumnName = "ID"))
+	@ManyToMany(targetEntity=Department.class, cascade = CascadeType.ALL)
+	@JoinTable(name = "EMP_DEPARTMENT", joinColumns = @JoinColumn(name = "EMPLOYEE_ID"), inverseJoinColumns = @JoinColumn(name="DEPARTMENT_ID"))
 	private Set<Department> department;
 
 	public Employee(){
@@ -58,12 +64,12 @@ public class Employee {
 		this.department = new HashSet<Department>();
 	}
 
-	public long getId() {
-		return id;
-	}
-	public void setId(long id) {
-		this.id = id;
-	}
+//	public long getId() {
+//		return id;
+//	}
+//	public void setId(long id) {
+//		this.id = id;
+//	}
 	public String getFirstName() {
 		return firstName;
 	}
