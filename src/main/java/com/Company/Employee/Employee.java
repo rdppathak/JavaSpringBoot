@@ -27,10 +27,7 @@ import com.Company.Role.Role;
 @Table(name="Employees", uniqueConstraints={@UniqueConstraint(columnNames = {"firstName", "lastName"})})
 @AttributeOverride(name = "id", column =@Column(name = "EMPLOYEE_ID"))
 public class Employee extends MindEntity{
-	
-//	@Id
-//    @GeneratedValue(strategy=GenerationType.AUTO)
-//	private long id;
+
 	@Column
 	private String firstName;
 	@Column
@@ -64,12 +61,6 @@ public class Employee extends MindEntity{
 		this.department = new HashSet<Department>();
 	}
 
-//	public long getId() {
-//		return id;
-//	}
-//	public void setId(long id) {
-//		this.id = id;
-//	}
 	public String getFirstName() {
 		return firstName;
 	}
